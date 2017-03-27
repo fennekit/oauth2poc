@@ -1,9 +1,9 @@
 ---
 
 spring:
-  datasource:
-    uri: ${vcap.services.apikey-pgsql.credentials.uri}
-#    url: ${vcap.services.apikey-pgsql.credentials.jdbcUrl}
+#  datasource:
+#    uri: ${vcap.services.apikey-pgsql.credentials.uri}
+#    url: ${vcap.servicesrvices.apikey-pgsql.credentials.jdbcUrl}
 #    username: ${vcap.services.apikey-pgsql.credentials.username}
 #    password: ${vcap.services.apikey-pgsql.credentials.password}
 
