@@ -2,9 +2,10 @@
 
 spring:
   datasource:
-    url: ${vcap.services.mydb.credentials.jdbcUrl}
-    username: ${vcap.services.mydb.credentials.username}
-    password: ${vcap.services.mydb.credentials.password}
+    uri: ${vcap.services.apikey-pgsql.credentials.uri}
+#    url: ${vcap.services.apikey-pgsql.credentials.jdbcUrl}
+#    username: ${vcap.services.apikey-pgsql.credentials.username}
+#    password: ${vcap.services.apikey-pgsql.credentials.password}
 
   flyway:
     baseline-on-migrate: true
