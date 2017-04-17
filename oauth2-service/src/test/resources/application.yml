@@ -1,0 +1,30 @@
+server:
+  # set the server's cookie name, to avoid a clash with cookies from clients (if they are running on the same machine)
+  session:
+    cookie:
+      name: oauth-server
+
+spring:
+  datasource:
+    platform: h2
+
+security:
+  # specify test users accounts
+  user:
+     name: unit_tester
+     password: test
+     role: USER
+  # specify test clients
+  oauth2:
+    client:
+      clientId: unit_test
+      clientSecret: test
+      authorized-grant-types: authorization_code,client_credentials,password,refresh_token
+      scope: read,write
+      # to skip the explicit approval step enable auto-approve
+      # auto-approve-scopes: '.*'
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
