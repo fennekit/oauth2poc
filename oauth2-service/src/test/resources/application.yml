@@ -21,8 +21,6 @@ security:
       clientSecret: test
       authorized-grant-types: authorization_code,client_credentials,password,refresh_token
       scope: read,write
-      # to skip the explicit approval step enable auto-approve
-      # auto-approve-scopes: '.*'
 
 logging:
   level:
