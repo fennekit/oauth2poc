@@ -5,6 +5,8 @@ server:
       name: oauth-server
 
 spring:
+  application:
+    name: mvctest
   datasource:
     platform: h2
 
